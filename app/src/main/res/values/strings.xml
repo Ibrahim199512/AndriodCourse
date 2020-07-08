@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">AndriodCourse</string>
     <string name="test">asdsdfasfddfsdfsdfdsfTest</string>
+    <string name="name_hint">Your Name</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="sing_up">sing up</string>
+    <string name="have_an_account">Have an Account?</string>
+    <string name="skip">skip</string>
 </resources>

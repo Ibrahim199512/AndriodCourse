@@ -5,4 +5,10 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="red">#ED1414</color>
     <color name="blue">#0F4ABF</color>
+    <color name="background_color1">#858585</color>
+    <color name="background_color2">#E7E7E3</color>
+    <color name="background_color3">#231F20</color>
+    <color name="text_color1">#231F20</color>
+    <color name="text_color2">#B6B6B4</color>
+    <color name="text_color3">#FFFFFF</color>
 </resources>
