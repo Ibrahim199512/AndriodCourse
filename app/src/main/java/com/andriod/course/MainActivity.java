@@ -1,16 +1,12 @@
 package com.andriod.course;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
 
 import android.content.Intent;
-import android.drm.DrmStore;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.e("onCreate", "onCreate");
         Button testButton = findViewById(R.id.test_button);
+
         testButton.setText("New Text");
 
         testButton.setOnClickListener(new View.OnClickListener() {
@@ -29,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, SimpleCalculatorActivity.class);
                 intent.putExtra("Name", "Ibrahim Alwadiya");
                 startActivity(intent);
+                finish();
+
+
             }
         });
 //        testButton.setOnClickListener(new View.OnClickListener() {
