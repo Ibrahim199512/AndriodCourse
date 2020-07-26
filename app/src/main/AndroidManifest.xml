@@ -11,14 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SharedPreferencesAndNotificationActivity">
+        <activity android:name=".SQliteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProductActivity"></activity>
+        <activity android:name=".SharedPreferencesAndNotificationActivity">
+
+        </activity>
+        <activity android:name=".ProductActivity" />
         <activity android:name=".StudentActivity" />
         <activity android:name=".SimpleCalculatorActivity" />
         <activity
@@ -30,9 +33,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
