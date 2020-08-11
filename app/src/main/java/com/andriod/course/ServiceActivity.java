@@ -41,10 +41,9 @@ public class ServiceActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-
                         seekbar.setProgress(localBinder.getCurrentPosition());
-                        Log.e("Test Test", "" + localBinder.getCurrentPosition());
-                        Log.e("Passed", "" + TimeUnit.MILLISECONDS.toSeconds(localBinder.getCurrentPosition()));
+           //            Log.e("Test Test", "" + localBinder.getCurrentPosition());
+          //              Log.e("Passed", "" + TimeUnit.MILLISECONDS.toSeconds(localBinder.getCurrentPosition()));
                         time.setText(TimeUnit.MILLISECONDS.toSeconds(localBinder.getCurrentPosition()) + " s");
                         mHandler.postDelayed(this, 1000);
                     }
@@ -92,12 +91,14 @@ public class ServiceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 localBinder.nextSong(ServiceActivity.this);
+                seekbar.setMax(localBinder.getDuration());
             }
         });
         findViewById(R.id.per_song).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 localBinder.perSong(ServiceActivity.this);
+                seekbar.setMax(localBinder.getDuration());
             }
         });
 
