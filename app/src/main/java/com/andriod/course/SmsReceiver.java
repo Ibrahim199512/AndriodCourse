@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
 import android.util.Log;
+import android.widget.Toast;
 
 public class SmsReceiver extends BroadcastReceiver {
 
@@ -13,6 +14,7 @@ public class SmsReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         // TODO: This method is called when the BroadcastReceiver is receiving
         // an Intent broadcast.
+        Toast.makeText(context, "sdsad", Toast.LENGTH_SHORT).show();
         Log.e("SmsReceiverClass", "onReceive");
         final Bundle bundle = intent.getExtras();
         String senderNumber = "", messege = "";
