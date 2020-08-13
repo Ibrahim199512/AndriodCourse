@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    tools:context=".DialogActivity">
+
+    <Button
+        android:id="@+id/show_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show dialog" />
+
+    <Button
+        android:id="@+id/close_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_dialog"
+        android:text="close dialog" />
+
+    <Button
+        android:id="@+id/custem_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/close_dialog"
+        android:text="custem dialog" />
+
+    <Button
+        android:id="@+id/custem_dialog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custem_dialog"
+        android:text="custem dialog 2" />
+</RelativeLayout>

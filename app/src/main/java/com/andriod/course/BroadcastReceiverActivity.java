@@ -20,7 +20,6 @@ public class BroadcastReceiverActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_broadcast_receiver);
 
-        registerSmsReceiver();
         requestSmsPermission();
 
         findViewById(R.id.custem_event).setOnClickListener(new View.OnClickListener() {
@@ -32,13 +31,6 @@ public class BroadcastReceiverActivity extends AppCompatActivity {
         });
 
 
-    }
-
-    private void registerSmsReceiver() {
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(getPackageName() + "android.provider.Telephony.SMS_RECEIVED");
-        SmsReceiver smsReceiver = new SmsReceiver();
-        registerReceiver(smsReceiver, filter);
     }
 
     private void requestSmsPermission() {
