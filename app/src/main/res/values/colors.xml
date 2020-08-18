@@ -11,4 +11,5 @@
     <color name="text_color1">#231F20</color>
     <color name="text_color2">#B6B6B4</color>
     <color name="text_color3">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
 </resources>
