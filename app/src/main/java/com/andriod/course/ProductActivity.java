@@ -23,7 +23,7 @@ public class ProductActivity extends AppCompatActivity {
         productList.add(new Product("Name1"
                 , 100.5
                 , "cat"
-                , "shop"
+                , "shop5"
                 , "https://imgix.bustle.com/uploads/image/2020/6/1/c7dbe48c-d444-42ba-9c26-1354d4cafa30-1842106.jpg"));
         productList.add(new Product("Name2"
                 , 100.5

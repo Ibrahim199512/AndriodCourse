@@ -15,11 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".FragmentsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".DialogActivity">
 
@@ -53,7 +49,13 @@
         <activity android:name=".SplashActivity" />
         <activity android:name=".SQliteActivity" />
         <activity android:name=".SharedPreferencesAndNotificationActivity" />
-        <activity android:name=".ProductActivity" />
+        <activity android:name=".ProductActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".StudentActivity" />
         <activity android:name=".SimpleCalculatorActivity" />
         <activity
