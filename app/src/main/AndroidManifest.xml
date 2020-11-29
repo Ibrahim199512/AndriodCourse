@@ -14,12 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FragmentsActivity">
+        <activity android:name=".FirebaseUISigninActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".DialogActivity">
-
-        </activity>
+        <activity android:name=".FragmentsActivity"></activity>
+        <activity android:name=".DialogActivity"></activity>
 
         <receiver
             android:name=".SmsReceiver"
@@ -38,7 +41,7 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".BroadcastReceiverActivity"></activity>
+        <activity android:name=".BroadcastReceiverActivity" />
         <activity android:name=".ServiceActivity" />
 
         <service
@@ -50,11 +53,7 @@
         <activity android:name=".SQliteActivity" />
         <activity android:name=".SharedPreferencesAndNotificationActivity" />
         <activity android:name=".ProductActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".StudentActivity" />
         <activity android:name=".SimpleCalculatorActivity" />
