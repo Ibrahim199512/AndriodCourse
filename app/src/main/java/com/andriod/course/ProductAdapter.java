@@ -1,11 +1,13 @@
 package com.andriod.course;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,6 +20,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
 
     ArrayList<Product> productsList;
     Context context;
+    Product product;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -34,7 +37,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
         }
     }
 
-    public ProductAdapter(ArrayList<Product> productsList,Context context) {
+    public ProductAdapter(ArrayList<Product> productsList, Context context) {
         this.productsList = productsList;
         this.context = context;
     }
@@ -50,13 +53,20 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Product product = productsList.get(position);
+    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
+        product = productsList.get(position);
         holder.productName.setText(product.getProductName());
         holder.productPrice.setText(product.getProductPricr() + " $");
         holder.productCatgory.setText(product.getProductCatgory());
         holder.shopName.setText(product.getShopName());
-
+        holder.shopName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                product = productsList.get(position);
+                Toast.makeText(context, product.getProductName(), Toast.LENGTH_SHORT).show();
+                Log.e("position", position + "");
+            }
+        });
         Glide.with(context).load(product.getProductImage()).into(holder.productImage);
 
     }
