@@ -27,6 +27,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class EmailPasswordActivity extends AppCompatActivity {
 
+    
     EditText email, password;
     Button createAccount, signin, signout;
     String TAG = "EmailPasswordActivity";
