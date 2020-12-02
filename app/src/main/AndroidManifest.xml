@@ -15,27 +15,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FacebookSigninActivity">
+        <activity android:name=".activities.RealTimeDatabaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EmailPasswordActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.FacebookSigninActivity"></activity>
+        <activity android:name=".activities.EmailPasswordActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".GoogleSigninActivity"></activity>
-        <activity android:name=".FirebaseUISigninActivity" />
-        <activity android:name=".FragmentsActivity" />
-        <activity android:name=".DialogActivity" />
+        <activity android:name=".activities.GoogleSigninActivity" />
+        <activity android:name=".activities.FirebaseUISigninActivity" />
+        <activity android:name=".activities.FragmentsActivity" />
+        <activity android:name=".activities.DialogActivity" />
 
         <receiver
-            android:name=".SmsReceiver"
+            android:name=".receivers.SmsReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -43,7 +40,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".MyReceiver"
+            android:name=".receivers.MyReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -51,22 +48,22 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".BroadcastReceiverActivity" />
-        <activity android:name=".ServiceActivity" />
+        <activity android:name=".activities.BroadcastReceiverActivity" />
+        <activity android:name=".activities.ServiceActivity" />
 
         <service
-            android:name=".MyService"
+            android:name=".services.MyService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".SplashActivity" />
-        <activity android:name=".SQliteActivity" />
-        <activity android:name=".SharedPreferencesAndNotificationActivity" />
-        <activity android:name=".ProductActivity" />
-        <activity android:name=".StudentActivity" />
-        <activity android:name=".SimpleCalculatorActivity" />
+        <activity android:name=".activities.SplashActivity" />
+        <activity android:name=".activities.SQliteActivity" />
+        <activity android:name=".activities.SharedPreferencesAndNotificationActivity" />
+        <activity android:name=".activities.ProductActivity" />
+        <activity android:name=".activities.StudentActivity" />
+        <activity android:name=".activities.SimpleCalculatorActivity" />
         <activity
-            android:name=".FullSignupActivity"
+            android:name=".activities.FullSignupActivity"
             android:configChanges="keyboard">
             <intent-filter>
                 <action android:name="asdf" />
@@ -74,12 +71,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activities.MainActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"
-            tools:replace="android:value"/>
+            tools:replace="android:value" />
 
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -97,7 +94,6 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
