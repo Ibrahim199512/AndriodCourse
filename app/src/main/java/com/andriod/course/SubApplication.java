@@ -3,6 +3,8 @@ package com.andriod.course;
 import android.app.Application;
 import android.content.IntentFilter;
 
+import com.andriod.course.receivers.SmsReceiver;
+
 public class SubApplication extends Application {
     // Overriding this method is totally optional!
     @Override

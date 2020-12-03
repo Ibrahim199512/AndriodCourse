@@ -13,7 +13,7 @@
         android:background="@color/background_color1"
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
-        tools:context=".FullSignupActivity">
+        tools:context=".activities.FullSignupActivity">
 
         <ImageView
             android:id="@+id/image_view"

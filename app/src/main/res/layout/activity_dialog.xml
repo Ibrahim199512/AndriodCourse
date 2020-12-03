@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="16dp"
     android:gravity="center"
-    tools:context=".DialogActivity">
+    tools:context=".activities.DialogActivity">
 
     <Button
         android:id="@+id/show_dialog"
