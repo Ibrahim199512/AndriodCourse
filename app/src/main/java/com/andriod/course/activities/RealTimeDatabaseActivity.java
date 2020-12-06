@@ -121,6 +121,7 @@ public class RealTimeDatabaseActivity extends AppCompatActivity {
     private void editCategory() {
         Category temp = categoryAdapter.getSelectedCategory();
         temp.setCategoryTitle(title.getText().toString());
+        temp.setCategoryImageUrl("https://firebasestorage.googleapis.com/v0/b/testproject-40632.appspot.com/o/categories_images%2Ftest1?alt=media&token=46f4bd3a-638e-40aa-bfb2-5c033f447684");
 
         Map<String, Object> categoryValues = temp.toMap();
 
