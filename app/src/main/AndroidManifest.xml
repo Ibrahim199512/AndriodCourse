@@ -15,33 +15,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.FCMActivity">
+        <activity android:name=".activities.VolleyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.FirebaseRecyclerAdapterActivity">
-
-        </activity>
-        <activity android:name=".activities.UploadFileAndImagesActivity"></activity>
-        <activity android:name=".activities.RealTimeDatabaseActivity"></activity>
+        <activity android:name=".activities.FCMActivity"></activity>
+        <activity android:name=".activities.FirebaseRecyclerAdapterActivity"></activity>
+        <activity android:name=".activities.UploadFileAndImagesActivity" />
+        <activity android:name=".activities.RealTimeDatabaseActivity" />
         <activity android:name=".activities.FacebookSigninActivity" />
         <activity android:name=".activities.EmailPasswordActivity" />
         <activity android:name=".activities.GoogleSigninActivity" />
         <activity android:name=".activities.FirebaseUISigninActivity" />
         <activity android:name=".activities.FragmentsActivity" />
-        <activity android:name=".activities.DialogActivity" />
-
-        <receiver
-            android:name=".receivers.SmsReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>
+        <activity android:name=".activities.DialogActivity" /> <!-- <receiver -->
+        <!-- android:name=".receivers.SmsReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.provider.Telephony.SMS_RECEIVED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
         <receiver
             android:name=".receivers.MyReceiver"
             android:enabled="true"
@@ -51,7 +48,9 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".activities.BroadcastReceiverActivity" />
+        <activity android:name=".activities.BroadcastReceiverActivity">
+
+        </activity>
         <activity android:name=".activities.ServiceActivity" />
 
         <service

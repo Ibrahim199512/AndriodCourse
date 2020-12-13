@@ -32,7 +32,6 @@ public class BroadcastReceiverActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void requestSmsPermission() {
