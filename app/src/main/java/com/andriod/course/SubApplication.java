@@ -17,7 +17,7 @@ public class SubApplication extends Application {
 
     private void registerSmsReceiver() {
         IntentFilter filter = new IntentFilter();
-        filter.addAction(getPackageName() + "android.provider.Telephony.SMS_RECEIVED");
+        filter.addAction("android.provider.Telephony.SMS_RECEIVED");
         SmsReceiver smsReceiver = new SmsReceiver();
         registerReceiver(smsReceiver, filter);
     }
